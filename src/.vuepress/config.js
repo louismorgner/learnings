@@ -5,7 +5,8 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
   title: "Personal Learning Wiki",
-  base: "learnings",
+  base: process.env.NODE_ENV === "production" ? "learnings" : "",
+  // base: "learnings", to host at github pages
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -64,6 +65,13 @@ module.exports = {
           title: "Neuroeconomics",
           collapsable: false,
           children: ["week-1/", "week-2/"],
+        },
+      ],
+      "/statistics/": [
+        {
+          title: "statistics",
+          collapsable: false,
+          children: ["", "terminology"],
         },
       ],
     },
