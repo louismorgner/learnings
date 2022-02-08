@@ -5,6 +5,7 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
   title: "Personal Learning Wiki",
+  base: "learnings",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
