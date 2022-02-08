@@ -58,25 +58,13 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/guide/": [
-        {
-          title: "Guide",
-          collapsable: false,
-          children: ["", "using-vue"],
-        },
-      ],
       "/neuroeconomics/": [
         {
-          title: "Neuroeconomics",
+          title: "Week 1: Fundamentals",
           collapsable: false,
-          children: ["", "using-vue"],
-        },
-      ],
-      "/fundamentals/": [
-        {
-          title: "Fundamentals",
-          collapsable: false,
-          children: ["", "using-vue"],
+          children: [
+            "week1/test", // 'docs/gettingStarted/README.md' if you renamed before
+          ],
         },
       ],
     },
