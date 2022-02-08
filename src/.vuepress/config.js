@@ -60,11 +60,9 @@ module.exports = {
     sidebar: {
       "/neuroeconomics/": [
         {
-          title: "Week 1: Fundamentals",
+          title: "Neuroeconomics",
           collapsable: false,
-          children: [
-            "week1/test", // 'docs/gettingStarted/README.md' if you renamed before
-          ],
+          children: ["week-1/", "week-2/"],
         },
       ],
     },
