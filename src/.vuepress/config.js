@@ -43,20 +43,8 @@ module.exports = {
         link: "/neuroeconomics/",
       },
       {
-        text: "Fundamentals",
-        link: "/fundamentals/",
-      },
-      {
-        text: "Guide",
-        link: "/guide/",
-      },
-      {
-        text: "Config",
-        link: "/config/",
-      },
-      {
-        text: "VuePress",
-        link: "https://v1.vuepress.vuejs.org",
+        text: "Statistics",
+        link: "/statistics/",
       },
     ],
     sidebar: {
