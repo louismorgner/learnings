@@ -5,7 +5,7 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
   title: "Personal Learning Wiki",
-  base: process.env.NODE_ENV === "development" ? "" : "learnings",
+  base: process.env.NODE_ENV === "development" ? "" : "learnings/",
   // base: "learnings", to host at github pages
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
