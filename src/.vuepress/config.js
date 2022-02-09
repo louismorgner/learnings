@@ -38,6 +38,19 @@ module.exports = {
         href: "https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css",
       },
     ],
+    [
+      "script",
+      {
+        src: "https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js",
+        onload: "renderMathInElement(document.body);",
+      },
+    ],
     ["link", { rel: "icon", href: "/icon.png" }],
   ],
 
