@@ -4,6 +4,7 @@
 - :ballot_box_with_check: Recap of basic economics
 - :soon: Recap of basic economics
 - :white_check_mark:
+- Categorical vs. parametric design !!
 
 ## Introduction to Neuroscience
 
