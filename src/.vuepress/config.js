@@ -38,6 +38,7 @@ module.exports = {
         href: "https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css",
       },
     ],
+    ["link", { rel: "icon", href: "/icon.png" }],
   ],
 
   /**
