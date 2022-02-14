@@ -1,5 +1,7 @@
 # W3: Intertemporal Choice
 
+- Axioms of discounted utility
+
 ## Hyperbolic discounting, quasi-hyperbolic discounting, beta-delta preferences
 
 ### Hyperbolic Discounting
@@ -37,3 +39,27 @@ $100+\beta\frac{100}{1+r}+\beta\frac{100}{(1+r)^2}+\beta\frac{100}{(1+r)^3}+...$
 where $\beta < 1$.
 
 Beta can be seen as the _haze_ we humans have when looking into the future as our choices are time inconsistent. We need to beta-delta model to model this flaw in our human decision making.
+
+### Overview
+
+Exponential Model
+$DU(x,t)=\delta^tU(x) = \frac{U(x)}{(1+r)^t}$
+
+Exponential Model:
+$DU(x,t)= \frac{U(x)}{(1+r)^t}$
+
+Hyperbolic:
+$DU(x,t) = \frac{U(x)}{1+kt}$
+
+Quasi Hyperbolic:
+$DU(x,t) = \beta\frac{U(x)}{(1+r)^t}$
+
+$U_{\text{classic}}(\text{learn today}) = -120 + \frac{10}{1.05} + \frac{10}{1.05^2} + \frac{10}{1.05^3} + ... = 80$
+
+$U_{\text{classic}}(\text{learn tomorrow}) = -0 + \frac{-120}{1.05} + \frac{10}{1.05^2} + \frac{10}{1.05^3} + ... = 76.19$
+
+$U_{\beta\delta}(\text{learn today}) = -120 + 0.9\frac{10}{1.05} + 0.9\frac{10}{1.05^2} + 0.9\frac{10}{1.05^3} + ... = 60$
+
+$U_{\beta\delta}(\text{learn tomorrow}) = -0 + 0.9\frac{-120}{1.05} + 0.9\frac{10}{1.05^2} + 0.9\frac{10}{1.05^3} + ... = 68$
+
+https://economics.stackexchange.com/questions/27499/the-beta-delta-model
