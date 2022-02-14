@@ -8,19 +8,22 @@
 
 ## Introduction to Neuroscience
 
-## MRI Data Analysis
-What type of data is recorded in fMRI experiments? What is a voxel?
+## fMRI Analysis
 
-What is BOLD? What exactly does fMRI measure?
+fMRI stands fro Functional Magnetic Resonance Imaging and is used to detect where oxiginated blood in the brain is located to gather insights about the activity within the brain.
 
-What are some common ways to analyze the data?
+The _BOLD_ contrast stands for _Blood-Oxygen-Level-Dependent_ Contrast and is the method that allows us to local neural activity in the brain.
 
-What is a "contrast"?
+A _voxel_ is the smallest 3-dimensional unit of imaging which constitutes the visualisation of activity in the brain.
 
-What are parametric and categorical designs? Blocked and related designs?
+### Use-cases for fMRI
 
-There are many resources you can find on the Internet. Here are some starting points: <https://afni.nimh.nih.gov/pub/dist/edu/latest/afni_handouts/FMRI_basics.pdf (Links to an external site.)>,  <https://afni.nimh.nih.gov/pub/dist/doc/papers/Absolute_Beginner_Cox_ISMRM_2011.pdf (Links to an external site.)>
+**Task-based fMRI**
+What: to find out how the brain is processing short (1-30s) stimuli and tasks. The more intense the stimuli is, the higher the neural activation.
 
+### What are parametric and categorical designs? Blocked and related designs?
+
+[2-minute](https://www.youtube.com/watch?v=rJjHjnzmvDI), [Basic of fMRI (slides)](https://afni.nimh.nih.gov/pub/dist/edu/latest/afni_handouts/FMRI_basics.pdf), [more details](https://afni.nimh.nih.gov/pub/dist/doc/papers/Absolute_Beginner_Cox_ISMRM_2011.pdf).
 
 ## Multiple Hypotheses Testing
 
@@ -42,10 +45,10 @@ $\approx 0.64$
 This example illustrates that with 20 tests (hypotheses), we have a probability of 64% of observing at least one significant result even if the tests in reality are not significant. Simply, we have a likelihood of 64% of making a Type I error which is much higher than a typical significance level of around 5%.
 
 ### What to do about it?
+
 As our signifcance level α increases above our desired threshold of 5% as we test multiple hypotheses, we need to somehow adjust the α so we reduce the probability of observing at least one significant result due to chance.
 
 There are different methods which can be applied to adjust the α when running a multi hypotheses test. Namely the _Bonferroni Correction_, the _False Discovery Rate_, and the _Familywise Error Rate_.
-
 
 The familywise error rate is defined as:
 
@@ -56,7 +59,9 @@ Where $\alpha_c$ is the level of significance for one comparison and $k$ is the 
 [This paper](https://www.stat.berkeley.edu/~mgoldman/Section0402.pdf) explains the Bonferroni Correction & False Discovery Rate very well.
 
 ### What does it mean in neuroscience?
+
 A typical fMRI scan is made up of more than 100.000 voxels. Each of those voxels can be seen as one hypothesis you want to test. As you can imagine, this makes it nearly impossible to get any significant findings as the unadjusted α (probability to get a false positive) will be extremely high. Hence, in every modern study, the α needs to be corrected to enable researchers to get real conclusions.
 
 ## Reverse Inference
+
 https://www.sciencedirect.com/science/article/abs/pii/S1364661305003360
