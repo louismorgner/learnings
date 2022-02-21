@@ -63,3 +63,5 @@ $U_{\beta\delta}(\text{learn today}) = -120 + 0.9\frac{10}{1.05} + 0.9\frac{10}{
 $U_{\beta\delta}(\text{learn tomorrow}) = -0 + 0.9\frac{-120}{1.05} + 0.9\frac{10}{1.05^2} + 0.9\frac{10}{1.05^3} + ... = 68$
 
 https://economics.stackexchange.com/questions/27499/the-beta-delta-model
+
+Good explanation of event vs block design: https://afni.nimh.nih.gov/pub/dist/HOWTO/howto/ht03_stim/html/stim_background.html
