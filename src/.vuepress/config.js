@@ -80,7 +80,7 @@ module.exports = {
         {
           title: "Neuroeconomics",
           collapsable: false,
-          children: ["week-1/", "week-2/", "week-3"],
+          children: ["week-1/", "week-2/", "week-3", "week-4"],
         },
       ],
       "/statistics/": [
